@@ -1,0 +1,8 @@
+p, admin, /post/*, r.sub == r.ctx.Owner, read
+p, admin, /model/post/schema, r.sub == r.ctx.Owner, read
+p, admin, /post/*, r.ctx.Age == 20, read
+p, admin, /author/*, r.sub == r.ctx.Owner, read
+
+g, alice, admin
+g, bob, admin
+g, test, admin
